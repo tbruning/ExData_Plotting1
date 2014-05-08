@@ -19,13 +19,13 @@ dt_sub$date <- as.POSIXct(dt_sub$date)
 
 ## Open the png device
 png(file = "plot4.png")
-par(mfrow= c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
+par(mfrow= c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0), bg = "transparent")
 
 ## Plot the date and the appropriate other items to meet the requirement
 ##  of having the plot look like the reference plot define by the instructors
 
 ## Plot 1
-plot(dt_sub$date, dt_sub$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
+plot(dt_sub$date, dt_sub$Global_active_power, xlab = "", ylab = "Global Active Power?bg", type = "l")
 ## Plot 2
 plot(dt_sub$date, dt_sub$Voltage, xlab = "datetime", ylab = "Voltage", type = "l")
 ## Plot 3

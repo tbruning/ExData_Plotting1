@@ -20,7 +20,7 @@ dt_sub$date <- as.POSIXct(dt_sub$date)
 ##  Create the data for the plot
 gap <- hist(dt_sub$Global_active_power, plot=FALSE)
 ## Open the png device
-png(file = "plot1.png")
+png(file = "plot1.png", bg = "transparent")
 ## Plot the date and the appropriate other items to meet the requirement
 ##  of having the plot look like the reference plot define by the instructors
 plot(gap, xlab = "Global Active Power (kilowatts)", col = "red", main = "Global Active Power")

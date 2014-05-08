@@ -18,7 +18,7 @@ dt_sub$date <- paste(dt_sub$Date, dt_sub$Time)
 dt_sub$date <- as.POSIXct(dt_sub$date)
 
 ## Open the png device
-png(file = "plot3.png")
+png(file = "plot3.png", bg = "transparent")
 ## Plot the data and the appropriate other items to meet the requirement
 ##  of having the plot look like the reference plot define by the instructors
 with(dt_sub, plot(dt_sub$date,dt_sub$Sub_metering_1, type = "n",  xlab = "", ylab = "Energy sub metering"))

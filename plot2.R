@@ -18,7 +18,7 @@ dt_sub$date <- paste(dt_sub$Date, dt_sub$Time)
 dt_sub$date <- as.POSIXct(dt_sub$date)
 
 ## Open the png device
-png(file = "plot2.png")
+png(file = "plot2.png", bg = "transparent")
 ## Plot the date and the appropriate other items to meet the requirement
 ##  of having the plot look like the reference plot define by the instructors
 plot(dt_sub$date, dt_sub$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
